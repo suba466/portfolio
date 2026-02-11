@@ -27,7 +27,7 @@ const Hero = () => {
                 className="z-10 max-w-5xl w-full flex flex-col items-center pt-20"
             >
                 {/* Main Name - Large Gradient Text */}
-                <h1 className="text-6xl md:text-9xl font-black mb-4 tracking-tighter">
+                <h1 className="text-5xl md:text-7xl lg:text-9xl font-black mb-4 tracking-tighter">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#06b6d4] drop-shadow-2xl">
                         Suba shree.T
                     </span>

@@ -72,7 +72,7 @@ const Projects = () => {
                 viewport={{ once: true }}
                 style={{ textAlign: 'center', marginBottom: '4rem' }}
             >
-                <h2 className="text-5xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-indigo-400 transition-colors">
+                <h2 className="text-3xl md:text-5xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-indigo-400 transition-colors">
                     Featured Projects
                 </h2>
                 <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-16 text-center transition-colors">

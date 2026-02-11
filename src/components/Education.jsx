@@ -58,7 +58,7 @@ const Education = () => {
                     viewport={{ once: true }}
                     style={{ textAlign: 'center', marginBottom: '4rem' }}
                 >
-                    <h2 className="text-5xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-violet-500 transition-colors">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-violet-500 transition-colors">
                         Education & Experience
                     </h2>
                     <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-16 text-center transition-colors">My academic journey and key milestones.</p>
