@@ -6,7 +6,6 @@ const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        subject: '',
         message: ''
     });
 
@@ -21,10 +20,11 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const { name, email, subject, message } = formData;
+        const { name, email, message } = formData;
 
         // Construct mailto link
-        const mailSubject = subject || `Portfolio Contact from ${name}`;
+
+        const mailSubject = `Portfolio Contact from ${name}`;
         const mailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
 
         window.location.href = `mailto:${YOUR_EMAIL}?subject=${encodeURIComponent(mailSubject)}&body=${mailBody}`;
@@ -96,18 +96,7 @@ const Contact = () => {
                                 />
                             </div>
 
-                            <div className="space-y-2">
-                                <label className="text-sm font-medium text-slate-300">Subject</label>
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    value={formData.subject}
-                                    onChange={handleChange}
-                                    className="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all placeholder:text-slate-500"
-                                    placeholder="Project Collaboration"
-                                    required
-                                />
-                            </div>
+
 
                             <div className="space-y-2">
                                 <label className="text-sm font-medium text-slate-300">Message</label>
