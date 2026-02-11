@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import TechStack from './components/TechStack';
 import About from './components/About';
 import Projects from './components/Projects';
+import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -13,7 +14,7 @@ function App() {
             <div className="background-wrapper fixed inset-0 -z-10"></div>
             <Navbar />
 
-            <main className="flex-grow pt-20">
+            <main className="flex-grow pt-16">
                 <Routes>
                     <Route path="/" element={
                         <>
@@ -23,6 +24,7 @@ function App() {
                     } />
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/resume" element={<Resume />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </main>

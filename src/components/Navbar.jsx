@@ -9,6 +9,7 @@ const Navbar = () => {
         { label: 'Home', path: '/' },
         { label: 'About', path: '/about' },
         { label: 'Projects', path: '/projects' },
+        { label: 'Resume', path: '/resume' },
         { label: 'Contact', path: '/contact' }
     ];
 
@@ -29,8 +30,8 @@ const Navbar = () => {
                     </div>
                 </Link>
 
-                {/* Right Side: Links & Socials Combined */}
-                <div className="hidden md:flex items-center gap-8">
+                {/* Right: Nav Links & Social Icons */}
+                <div className="hidden md:flex items-center gap-10 bg-transparent">
                     {navItems.map((item) => {
                         const isActive = location.pathname === item.path;
                         return (
@@ -47,7 +48,6 @@ const Navbar = () => {
                         );
                     })}
 
-                    {/* Social Icons - Now same gap as links */}
                     <a
                         href="https://github.com/suba466/urbancompany"
                         target="_blank"
@@ -66,7 +66,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                {/* Mobile Menu Button - Third flex child */}
+                {/* Mobile Menu Button */}
                 <div className="md:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
