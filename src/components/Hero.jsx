@@ -4,7 +4,7 @@ import resume from '../assets/Suba_shree.pdf';
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden bg-transparent transition-colors duration-300">
+        <section id="home" className="min-h-screen flex flex-col justify-start pt-28 md:justify-center md:pt-0 items-center text-center px-4 relative overflow-hidden bg-transparent transition-colors duration-300">
             {/* Background Effects */}
             {/* Removed blocking overlay to show global background */}
 
@@ -24,7 +24,7 @@ const Hero = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="z-10 max-w-5xl w-full flex flex-col items-center pt-20"
+                className="z-10 max-w-5xl w-full flex flex-col items-center"
             >
                 {/* Main Name - Large Gradient Text */}
                 <h1 className="text-5xl md:text-7xl lg:text-9xl font-black mb-4 tracking-tighter">
