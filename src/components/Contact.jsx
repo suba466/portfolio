@@ -18,25 +18,44 @@ const Contact = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
+
         const { name, email, message } = formData;
 
-        // Show alert as requested
-        alert("Message Sent Successfully!");
-
-        // Construct mailto link
-        const mailSubject = `Portfolio Contact from ${name}`;
-        const mailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-
-        window.location.href = `mailto:${YOUR_EMAIL}?subject=${encodeURIComponent(mailSubject)}&body=${mailBody}`;
-
-        // Reset form
-        setFormData({
-            name: '',
-            email: '',
-            message: ''
+        // Using Web3Forms for background email submission
+        // You can get your own access key from https://web3forms.com/
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify({
+                access_key: "YOUR_ACCESS_KEY_HERE", // Replace with your real key
+                name: name,
+                email: email,
+                message: message,
+            }),
         });
+
+        const result = await response.json();
+
+        if (result.success) {
+            alert("Message Sent Successfully!");
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
+            });
+        } else {
+            alert("Something went wrong. Please try again later.");
+        }
+
+        setIsSubmitting(false);
     };
 
     const contactInfo = [
@@ -122,10 +141,11 @@ const Contact = () => {
 
                         <button
                             type="submit"
-                            className="w-full py-4 rounded-xl font-bold text-white flex items-center justify-center gap-2 transition-all duration-300 bg-gradient-to-r from-violet-600 to-indigo-600 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 hover:scale-[1.02] active:scale-[0.98]"
+                            disabled={isSubmitting}
+                            className={`w-full py-4 rounded-xl font-bold text-white flex items-center justify-center gap-2 transition-all duration-300 bg-gradient-to-r from-violet-600 to-indigo-600 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 hover:scale-[1.02] active:scale-[0.98] ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                         >
-                            <Send size={20} />
-                            Send Message
+                            <Send size={20} className={isSubmitting ? 'animate-pulse' : ''} />
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
                         </button>
                     </form>
                 </motion.div>
