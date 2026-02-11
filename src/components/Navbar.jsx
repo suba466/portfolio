@@ -16,7 +16,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300 backdrop-blur-sm bg-slate-900/50 border-b border-white/10">
+        <nav className="fixed top-0 left-0 right-0 z-50 px-8 md:px-16 py-4 transition-all duration-300 backdrop-blur-sm bg-slate-900/50 border-b border-white/10">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
                 {/* Left: Brand */}
                 <Link to="/" className="flex items-center gap-3 group">
