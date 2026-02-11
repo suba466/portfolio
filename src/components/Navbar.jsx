@@ -29,8 +29,8 @@ const Navbar = () => {
                     </div>
                 </Link>
 
-                {/* Right: Nav Links & Social Icons */}
-                <div className="hidden md:flex items-center gap-10 bg-transparent">
+                {/* Right Side: Links & Socials Combined */}
+                <div className="hidden md:flex items-center gap-8">
                     {navItems.map((item) => {
                         const isActive = location.pathname === item.path;
                         return (
@@ -47,6 +47,7 @@ const Navbar = () => {
                         );
                     })}
 
+                    {/* Social Icons - Now same gap as links */}
                     <a
                         href="https://github.com/suba466/urbancompany"
                         target="_blank"
@@ -65,7 +66,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                {/* Mobile Menu Button */}
+                {/* Mobile Menu Button - Third flex child */}
                 <div className="md:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
