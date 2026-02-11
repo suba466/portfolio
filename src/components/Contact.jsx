@@ -182,6 +182,14 @@ const Contact = () => {
                             >
                                 <Linkedin size={28} />
                             </a>
+                            <a
+                                href="https://github.com/suba466"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-4 rounded-xl bg-slate-800 text-slate-400 hover:bg-white hover:text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
+                            >
+                                <Github size={28} />
+                            </a>
                         </div>
                     </motion.div>
                 </div>
