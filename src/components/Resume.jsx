@@ -101,7 +101,7 @@ const Resume = () => {
     );
 
     return (
-        <section className="min-h-screen pt-4 pb-20 px-4 max-w-5xl mx-auto">
+        <section className="min-h-screen pt-4 pb-20 px-8 md:px-16 max-w-5xl mx-auto">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

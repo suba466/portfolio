@@ -22,12 +22,21 @@ const Contact = () => {
         e.preventDefault();
         const { name, email, message } = formData;
 
-        // Construct mailto link
+        // Show alert as requested
+        alert("Message Sent Successfully!");
 
+        // Construct mailto link
         const mailSubject = `Portfolio Contact from ${name}`;
         const mailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
 
         window.location.href = `mailto:${YOUR_EMAIL}?subject=${encodeURIComponent(mailSubject)}&body=${mailBody}`;
+
+        // Reset form
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
     };
 
     const contactInfo = [
@@ -58,7 +67,7 @@ const Contact = () => {
     ];
 
     return (
-        <section className="min-h-screen py-20 px-4 max-w-7xl mx-auto flex items-center justify-center">
+        <section className="min-h-screen py-20 px-8 md:px-16 max-w-7xl mx-auto flex items-center justify-center">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
 
                 {/* Left Column: Contact Form */}
