@@ -79,9 +79,8 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu Dropdown */}
             {isOpen && (
-                <div className="md:hidden absolute top-full left-0 right-0 bg-slate-900/95 border-b border-white/10 backdrop-blur-xl p-4 flex flex-col gap-4 shadow-xl animate-in slide-in-from-top-2">
+                <div className="md:hidden absolute top-full left-0 right-0 bg-slate-900/95 border-b border-white/10 backdrop-blur-xl p-4 flex flex-col gap-4 shadow-xl animate-in slide-in-from-top-2 items-center">
                     {navItems.map((item) => {
                         const isActive = location.pathname === item.path;
                         return (
