@@ -29,8 +29,8 @@ const Navbar = () => {
                     </div>
                 </Link>
 
-                {/* Center: Nav Links */}
-                <div className="hidden md:flex items-center gap-10 bg-transparent px-8 py-2.5">
+                {/* Right: Nav Links & Social Icons */}
+                <div className="hidden md:flex items-center gap-10 bg-transparent">
                     {navItems.map((item) => {
                         const isActive = location.pathname === item.path;
                         return (
@@ -46,17 +46,14 @@ const Navbar = () => {
                             </Link>
                         );
                     })}
-                </div>
 
-                {/* Right: Social Icons */}
-                <div className="hidden md:flex items-center gap-4">
                     <a
                         href="https://github.com/suba466/urbancompany"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-slate-300 hover:text-white transition-colors transform hover:scale-110"
                     >
-                        <Github size={20} />
+                        <Github size={18} />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/suba-shree-t-7171a8258/"
@@ -64,7 +61,7 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                         className="text-slate-300 hover:text-blue-400 transition-colors transform hover:scale-110"
                     >
-                        <Linkedin size={20} />
+                        <Linkedin size={18} />
                     </a>
                 </div>
 
