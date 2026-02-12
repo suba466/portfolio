@@ -82,7 +82,7 @@ const Navbar = () => {
 
                     <div className="flex items-center gap-4 ml-2 border-l border-white/10 pl-6">
                         <a
-                            href="https://github.com/suba466/urbancompany"
+                            href="https://github.com/suba466/urbancpmpany"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-slate-300 hover:text-white transition-colors transform hover:scale-110"
@@ -129,7 +129,7 @@ const Navbar = () => {
                     {/* Mobile Socials */}
                     <div className="flex items-center gap-4 px-4 pt-4 border-t border-white/10 w-full justify-center">
                         <a
-                            href="https://github.com/suba466"
+                            href="https://github.com/suba466/urbancpmpany"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-slate-400 hover:text-white transition-colors p-2"
