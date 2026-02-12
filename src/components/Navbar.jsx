@@ -82,7 +82,7 @@ const Navbar = () => {
 
                     <div className="flex items-center gap-4 ml-2 border-l border-white/10 pl-6">
                         <a
-                            href="https://github.com/suba466"
+                            href="https://github.com/suba466/urbancompany"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-slate-300 hover:text-white transition-colors transform hover:scale-110"
@@ -90,7 +90,7 @@ const Navbar = () => {
                             <Github size={18} />
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/suba-shree-t-7171a8258/"
+                            href="https://www.linkedin.com/in/suba-shree-999472253"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-slate-300 hover:text-blue-400 transition-colors transform hover:scale-110"
@@ -137,7 +137,7 @@ const Navbar = () => {
                             <Github size={24} />
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/suba-shree-t-7171a8258/"
+                            href="https://www.linkedin.com/in/suba-shree-999472253"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-slate-400 hover:text-blue-400 transition-colors p-2"

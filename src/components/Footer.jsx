@@ -10,7 +10,7 @@ const Footer = () => {
 
                 <div className="flex items-center gap-6">
                     <a
-                        href="https://github.com/suba466"
+                        href="https://github.com/suba466/urbancompany"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
@@ -18,7 +18,7 @@ const Footer = () => {
                         <Github size={20} />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/suba-shree-t-7171a8258/"
+                        href="https://www.linkedin.com/in/suba-shree-999472253"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-slate-400 hover:text-blue-400 transition-colors hover:scale-110 transform duration-200"

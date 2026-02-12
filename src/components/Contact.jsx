@@ -195,7 +195,7 @@ const Contact = () => {
                         </h3>
                         <div className="flex gap-4">
                             <a
-                                href="https://linkedin.com/in/suba-shree-t-7171a8258"
+                                href="https://linkedin.com/in/suba-shree-999472253"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-4 rounded-xl bg-blue-600/10 text-blue-400 hover:bg-blue-600 hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30"
@@ -203,7 +203,7 @@ const Contact = () => {
                                 <Linkedin size={28} />
                             </a>
                             <a
-                                href="https://github.com/suba466"
+                                href="https://github.com/suba466/urbancompany"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-4 rounded-xl bg-slate-800 text-slate-400 hover:bg-white hover:text-slate-900 transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
