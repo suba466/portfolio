@@ -26,32 +26,32 @@ const Contact = () => {
 
         const { name, email, message } = formData;
 
-        // Using Web3Forms for background email submission
-        // You can get your own access key from https://web3forms.com/
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-            },
-            body: JSON.stringify({
-                access_key: "YOUR_ACCESS_KEY_HERE", // Replace with your real key
-                name: name,
-                email: email,
-                message: message,
-            }),
-        });
-
-        const result = await response.json();
-
-        if (result.success) {
-            alert("Message Sent Successfully!");
-            setFormData({
-                name: '',
-                email: '',
-                message: ''
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/subashree0806@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message,
+                    _subject: `New Portfolio Message from ${name}`
+                }),
             });
-        } else {
+
+            if (response.ok) {
+                alert("Message Sent Successfully!");
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: ''
+                });
+            } else {
+                alert("Something went wrong. Please try again later.");
+            }
+        } catch (error) {
             alert("Something went wrong. Please try again later.");
         }
 
