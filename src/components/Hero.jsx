@@ -4,7 +4,7 @@ import resume from '../assets/Suba_shree.pdf';
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-[90vh] flex flex-col justify-center pt-24 pb-12 md:pt-32 md:pb-48 items-center text-center px-8 md:px-16 relative overflow-hidden bg-transparent transition-colors duration-300">
+        <section id="home" className="min-h-[75vh] flex flex-col justify-center pt-12 pb-12 md:pt-16 md:pb-20 items-center text-center px-8 md:px-16 relative overflow-hidden bg-transparent transition-colors duration-300">
             {/* Background Effects */}
             {/* Removed blocking overlay to show global background */}
 

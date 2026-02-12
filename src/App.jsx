@@ -14,7 +14,7 @@ function App() {
             <div className="background-wrapper fixed inset-0 -z-10"></div>
             <Navbar />
 
-            <main className="flex-grow pt-20 md:pt-24">
+            <main className="flex-grow pt-8 md:pt-10">
                 <Routes>
                     <Route path="/" element={
                         <>
