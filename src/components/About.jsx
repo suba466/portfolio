@@ -38,7 +38,7 @@ const About = () => {
     ];
 
     return (
-        <section className="min-h-screen py-20 px-8 md:px-16 max-w-7xl mx-auto flex flex-col justify-center">
+        <section id="about" className="min-h-screen py-20 px-8 md:px-16 max-w-7xl mx-auto flex flex-col justify-center scroll-mt-20">
 
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}

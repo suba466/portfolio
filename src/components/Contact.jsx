@@ -86,7 +86,7 @@ const Contact = () => {
     ];
 
     return (
-        <section className="min-h-screen py-20 px-8 md:px-16 max-w-7xl mx-auto flex items-center justify-center">
+        <section id="contact" className="min-h-screen py-20 px-8 md:px-16 max-w-7xl mx-auto flex items-center justify-center scroll-mt-20">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
 
                 {/* Left Column: Contact Form */}

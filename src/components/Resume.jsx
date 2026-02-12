@@ -40,7 +40,7 @@ const Resume = () => {
     const certifications = [
         {
             title: "Full Stack Development (Professional Program)",
-            issuer: "NxtWave Academy",
+            issuer: "NSchool Academy",
             year: "Completed, 2025",
             description: "Intensive training in MERN stack development, covering frontend, backend, and database technologies."
         }
@@ -101,7 +101,7 @@ const Resume = () => {
     );
 
     return (
-        <section className="min-h-screen pt-4 pb-20 px-8 md:px-16 max-w-5xl mx-auto">
+        <section id="resume" className="min-h-screen pt-4 pb-20 px-8 md:px-16 max-w-5xl mx-auto scroll-mt-20">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

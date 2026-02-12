@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const techCategories = [
     {
         title: "Frontend",
-        skills: ["React.js", "Tailwind CSS", "HTML5", "CSS3", "JavaScript", "Framer Motion"]
+        skills: ["React.js", "Tailwind CSS", "HTML5", "CSS", "JavaScript", "Bootstrap"]
     },
     {
         title: "Backend",
@@ -11,7 +11,7 @@ const techCategories = [
     },
     {
         title: "Database",
-        skills: ["MongoDB", "MySQL"]
+        skills: ["MongoDB"]
     },
     {
         title: "Tools",
@@ -21,7 +21,7 @@ const techCategories = [
 
 const TechStack = () => {
     return (
-        <section id="tech" className="pt-2 pb-12 px-8 md:px-16 max-w-5xl mx-auto">
+        <section id="tech" className="pt-2 pb-12 px-8 md:px-16 max-w-5xl mx-auto scroll-mt-20">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -20,6 +20,10 @@ function App() {
                         <>
                             <Hero />
                             <TechStack />
+                            <About />
+                            <Projects />
+                            <Resume />
+                            <Contact />
                         </>
                     } />
                     <Route path="/about" element={<About />} />

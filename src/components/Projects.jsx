@@ -65,7 +65,7 @@ const ProjectCard = ({ project, index, isSingle }) => (
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-20 px-8 md:px-16 max-w-7xl mx-auto">
+        <section id="projects" className="py-20 px-8 md:px-16 max-w-7xl mx-auto scroll-mt-20">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
