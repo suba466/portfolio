@@ -119,7 +119,7 @@ const Resume = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href={resume}
-                    download
+                    download="Suba_shree_Resume.pdf"
                     className="inline-flex px-8 py-4 rounded-full font-bold items-center gap-2 transition-all duration-300 bg-white/5 text-slate-200 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20 shadow-sm mx-auto cursor-pointer"
                 >
                     <Download size={20} /> Download Resume
