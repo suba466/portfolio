@@ -28,7 +28,7 @@ const Hero = () => {
             >
                 {/* Main Name - Large Gradient Text */}
                 <h1 className="text-3xl md:text-5xl lg:text-8xl font-black mb-4 tracking-tighter">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#06b6d4] drop-shadow-2xl">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 drop-shadow-2xl">
                         Suba shree.T
                     </span>
                 </h1>

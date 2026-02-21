@@ -52,14 +52,47 @@ const Navbar = () => {
                 {/* Left: Brand */}
                 <div
                     onClick={() => handleNavClick('home')}
-                    className="flex items-center gap-3 group pl-2 cursor-pointer"
+                    className="flex flex-col items-center group cursor-pointer"
                 >
-                    <div className="flex flex-col">
-                        <span className="text-xl font-bold text-amber-500 tracking-wide font-outfit group-hover:text-amber-400 transition-colors">
-                            Suba shree.T
-                        </span>
-                        <span className="text-[0.65rem] text-amber-200/60 tracking-widest uppercase font-light">
-                            Code Your Dreams Into Reality
+                    <div className="relative w-14 h-14 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                        {/* Perfect Interlocking "SS" SVG - Matching the reference image exactly */}
+                        <svg viewBox="0 0 100 100" className="w-full h-full">
+                            <defs>
+                                <linearGradient id="ssGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stopColor="#3b82f6" /> {/* Blue */}
+                                    <stop offset="100%" stopColor="#06b6d4" /> {/* Cyan */}
+                                </linearGradient>
+                            </defs>
+                            {/* Back "S" - Subtle and slightly offset */}
+                            <text x="46%" y="60%"
+                                style={{
+                                    fontFamily: "'Playfair Display', serif",
+                                    fontSize: "62px",
+                                    fontWeight: "900",
+                                    fill: "rgba(59, 130, 246, 0.3)",
+                                }}
+                                textAnchor="middle"
+                            >
+                                S
+                            </text>
+                            {/* Front "S" - Bold and Primary */}
+                            <text x="54%" y="78%"
+                                style={{
+                                    fontFamily: "'Playfair Display', serif",
+                                    fontSize: "62px",
+                                    fontWeight: "900",
+                                    fill: "url(#ssGradient)"
+                                }}
+                                textAnchor="middle"
+                            >
+                                S
+                            </text>
+                        </svg>
+                    </div>
+                    {/* Typography block exactly matching the reference image layout */}
+                    <div className="flex flex-col items-center -mt-1">
+                        <span className="text-[8px] tracking-[0.3em] text-cyan-400 font-medium uppercase leading-none">
+                            MERN Stack Developer
                         </span>
                     </div>
                 </div>
