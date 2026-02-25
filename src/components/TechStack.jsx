@@ -21,7 +21,7 @@ const techCategories = [
 
 const TechStack = () => {
     return (
-        <section id="tech" className="pt-2 pb-12 px-8 md:px-16 max-w-5xl mx-auto scroll-mt-20">
+        <section id="tech" className="pt-2 pb-12 px-4 md:px-16 max-w-5xl mx-auto scroll-mt-20">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -86,7 +86,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="min-h-screen py-20 px-8 md:px-16 max-w-7xl mx-auto flex items-center justify-center scroll-mt-20">
+        <section id="contact" className="min-h-screen py-20 px-4 md:px-16 max-w-7xl mx-auto flex items-center justify-center scroll-mt-20">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
 
                 {/* Left Column: Contact Form */}
@@ -94,7 +94,7 @@ const Contact = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="lg:col-span-2 bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 p-8 shadow-2xl"
+                    className="lg:col-span-2 bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 p-6 md:p-8 shadow-2xl"
                 >
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="grid grid-cols-1 gap-6">
@@ -157,7 +157,7 @@ const Contact = () => {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 p-8 shadow-2xl h-fit"
+                        className="bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 p-6 md:p-8 shadow-2xl h-fit"
                     >
                         <h3 className="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">
                             Contact Information
@@ -167,7 +167,7 @@ const Contact = () => {
                                 <a
                                     key={index}
                                     href={info.href}
-                                    className="flex items-start gap-4 group hover:bg-white/5 p-3 rounded-xl transition-colors"
+                                    className="flex items-start gap-3 md:gap-4 group hover:bg-white/5 p-2 md:p-3 rounded-xl transition-colors"
                                 >
                                     <div className={`p-3 rounded-lg ${info.bg} ${info.color} group-hover:scale-110 transition-transform`}>
                                         {info.icon}
@@ -188,7 +188,7 @@ const Contact = () => {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
-                        className="bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 p-8 shadow-2xl"
+                        className="bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 p-6 md:p-8 shadow-2xl"
                     >
                         <h3 className="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">
                             Connect With Me
