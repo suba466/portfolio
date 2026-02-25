@@ -172,9 +172,9 @@ const Contact = () => {
                                     <div className={`p-3 rounded-lg ${info.bg} ${info.color} group-hover:scale-110 transition-transform`}>
                                         {info.icon}
                                     </div>
-                                    <div>
+                                    <div className="min-w-0 flex-1">
                                         <p className="text-sm text-slate-400 font-medium mb-1">{info.label}</p>
-                                        <p className="text-slate-200 font-medium group-hover:text-white transition-colors">
+                                        <p className="text-slate-200 font-medium group-hover:text-white transition-colors break-all">
                                             {info.value}
                                         </p>
                                     </div>
